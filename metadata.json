@@ -1,0 +1,6 @@
+{
+  "name": "Polo Maker 3D",
+  "description": "Catálogo de proyectos y piezas de impresión 3D de alta precisión.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
