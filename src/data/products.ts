@@ -1,6 +1,296 @@
 import { Product } from '../types';
 
 export const MOCK_PRODUCTS: Product[] = [
+  // NUEVOS MODELOS ARTICULADOS MAKERWORLD
+  {
+    id: 'prod-jug-031',
+    title: 'Dinosaurio Flexi Diplodocus Bebé',
+    subtitle: 'Tierno dinosaurio articulado tipo flexi impreso en 3D',
+    category: 'juguetes',
+    material: 'PLA Plus',
+    featured: true,
+    price: 7500,
+    priceDisplay: '$7.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/USba89b24b72eff5/design/2e83293491d94b67.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Dinosaurio Diplodocus Bebé con cuerpo articulado flexible en eslabones. Se mueve de manera sumamente fluida y es ideal para regalar o como juguete antiestrés.',
+    colorsAvailable: ['Verde Menta', 'Azul Pastel', 'Verde Lima', 'Amarillo'],
+    tags: ['Dinosaurio', 'Flexi', 'Articulado', 'Juguetes', 'Diplodocus']
+  },
+  {
+    id: 'prod-jug-032',
+    title: 'Dragón Criatura Flexi Articulado',
+    subtitle: 'Figura fantástica articulada de movimiento súper fluido',
+    category: 'juguetes',
+    material: 'PLA Plus',
+    featured: true,
+    price: 8900,
+    priceDisplay: '$8.900 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/DSM00000001459225/design/2025-05-27_a2c263cabb1fe.jpg?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Modelo articulado flexible tipo flexi con acabado de gran precisión. Perfecto para coleccionistas, escritorios y amantes de las figuras articuladas impresas en 3D.',
+    colorsAvailable: ['Seda Dorado', 'Arcoíris', 'Verde Esmeralda', 'Rojo Fuego'],
+    tags: ['Dragón', 'Flexi', 'Articulado', 'Juguetes', 'Coleccionable']
+  },
+  {
+    id: 'prod-jug-033',
+    title: 'Murciélago Gótico Flexi Colgante',
+    subtitle: 'Murciélago articulado estilo gótico con patas para colgar',
+    category: 'juguetes',
+    material: 'PLA Plus',
+    featured: true,
+    price: 8200,
+    priceDisplay: '$8.200 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/USb8ee049ce75d84/design/5c197cc0208ac6d3.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Murciélago articulado gótico con patas diseñadas para colgarse de ramas, bordes de monitores o estantes. Alas articuladas flexibles de gran detalle.',
+    colorsAvailable: ['Negro Azabache', 'Morado Gótico', 'Gris Plata', 'Rojo Oscuro'],
+    tags: ['Murciélago', 'Flexi', 'Gótico', 'Articulado', 'Decoración']
+  },
+  // DESTACADOS MAKERWORLD
+  {
+    id: 'prod-hogar-030',
+    title: 'Soporte de Estante Moderno',
+    subtitle: 'Soporte resistente y elegante para repisas y estantes de pared',
+    category: 'hogar',
+    material: 'PETG',
+    featured: true,
+    price: 8500,
+    priceDisplay: '$8.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US227d6788c131ee/design/b4f5e36f92902b61.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Soporte con diseño geométrico moderno para colocar repisas en paredes de habitaciones, cocina u oficina. Impreso en PETG de alta resistencia mecánica.',
+    colorsAvailable: ['Negro Matte', 'Blanco Puro', 'Gris Grafito'],
+    tags: ['Estante', 'Repisa', 'Hogar', 'Diseño', 'PETG']
+  },
+  {
+    id: 'prod-jug-030',
+    title: 'Minecraft Wither Skeleton – Articulado',
+    subtitle: 'Figura articulada de Minecraft ideal para gamers y coleccionistas',
+    category: 'juguetes',
+    material: 'PLA Plus',
+    featured: true,
+    price: 9500,
+    priceDisplay: '$9.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US5b4d59e85f2adc/design/41d3e87b3373bda5.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Wither Skeleton de Minecraft totalmente articulado en extremidades y cabeza. Un excelente objeto de decoración o regalo gamer.',
+    colorsAvailable: ['Negro Azabache', 'Gris Esqueleto', 'Blanco Hueso'],
+    tags: ['Minecraft', 'Gamer', 'Articulado', 'Coleccionable']
+  },
+  {
+    id: 'prod-hogar-031',
+    title: 'Soporte para Especias, Aceite y Vinagre',
+    subtitle: 'Organizador de mesada elegante para condimentos y botellas',
+    category: 'hogar',
+    material: 'PETG',
+    featured: true,
+    price: 11000,
+    priceDisplay: '$11.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US2383c23bb52a4f/design/8e26d691739f9419.jpg?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Organizador de cocina diseñado para sostener frascos de especias, aceiteras y vinagreras de forma ordenada, evitando derrames sobre la mesada.',
+    colorsAvailable: ['Blanco Nieve', 'Negro Mate', 'Translucido'],
+    tags: ['Cocina', 'Organizador', 'Especias', 'PETG']
+  },
+  {
+    id: 'prod-hogar-032',
+    title: 'Bandeja de Sofá (v2) con Posavasos',
+    subtitle: 'Bandeja rígida modular para el apoyabrazos del sillón',
+    category: 'hogar',
+    material: 'PLA Plus',
+    featured: true,
+    price: 12500,
+    priceDisplay: '$12.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US1bd9b1c2c0e886/design/4e27c87ed57f7563.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Práctica bandeja con diseño flexible que se adapta al apoyabrazos del sillón o sofá. Incluye posavasos integrado para tazas, vasos o mates.',
+    colorsAvailable: ['Marrón Madera', 'Negro', 'Gris Oscuro', 'Blanco'],
+    tags: ['Sillón', 'Posavasos', 'Bandeja', 'Hogar']
+  },
+  {
+    id: 'prod-util-030',
+    title: 'Soporte de Pared para Llaves y Accesorios',
+    subtitle: 'Organizador flotante minimalista para el recibidor o entrada',
+    category: 'utilidades',
+    material: 'PLA Plus',
+    featured: true,
+    price: 7500,
+    priceDisplay: '$7.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US97d8e7e3d17ba3/design/0d7fffba1e38d705.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Perchero y cuelga llaves flotante para pared con diseño moderno. Permite colgar manojos de llaves, billetera, anteojos y correspondencia.',
+    colorsAvailable: ['Negro Elegante', 'Blanco Nórdico', 'Gris'],
+    tags: ['Llaves', 'Organizador', 'Pared', 'Entrada']
+  },
+  {
+    id: 'prod-util-031',
+    title: 'Soporte de Auriculares Minimalista',
+    subtitle: 'Base elegante de escritorio para auriculares Gamer y Audio',
+    category: 'utilidades',
+    material: 'PLA Plus',
+    featured: true,
+    price: 9000,
+    priceDisplay: '$9.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/USda787c17d81c36/design/a1bd3476aae0b2f3.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Soporte vertical ergonómico para sostener auriculares supraaurales de diadema. Mantiene ordenado tu setup de escritorio o estación de trabajo.',
+    colorsAvailable: ['Negro Mate', 'Blanco', 'Rojo Ferrari', 'Azul'],
+    tags: ['Auriculares', 'Setup', 'Escritorio', 'Gamer']
+  },
+  {
+    id: 'prod-hogar-033',
+    title: 'Gancho para Toalla de Pared',
+    subtitle: 'Perchero individual para baño y cocina con fijación resistente',
+    category: 'hogar',
+    material: 'PETG',
+    featured: false,
+    price: 4500,
+    priceDisplay: '$4.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US33d5c89bb18d1b/design/3ff7667696c52314.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Gancho colgador moderno e impermeable en PETG. Ideal para colgar toallas de mano, repasadore o accesorios en baño y cocina.',
+    colorsAvailable: ['Blanco Sanitarios', 'Negro', 'Gris Cromo'],
+    tags: ['Gancho', 'Toalla', 'Baño', 'PETG']
+  },
+  {
+    id: 'prod-hogar-034',
+    title: 'Estante Moderno para Ducha',
+    subtitle: 'Organizador impermeable con escurridor para shampoo y jabón',
+    category: 'hogar',
+    material: 'PETG',
+    featured: true,
+    price: 12000,
+    priceDisplay: '$12.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US9fb8623da799fc/design/c7f9057c79cd5890.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Repisa colgante de baño con ranuras de autodrenaje. Fabricado en PETG súper resistente a la humedad y vapor de la ducha.',
+    colorsAvailable: ['Blanco', 'Negro', 'Gris Humo'],
+    tags: ['Ducha', 'Baño', 'Estante', 'Impermeable', 'PETG']
+  },
+  {
+    id: 'prod-hogar-035',
+    title: 'Jarrón Giro Nebulosa',
+    subtitle: 'Florero decorativo de diseño helicoidal torsil',
+    category: 'hogar',
+    material: 'PLA Plus',
+    featured: true,
+    price: 10500,
+    priceDisplay: '$10.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US9b9cbbfe99f13b/design/3fc038a2e006db54.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Jarrón artístico con curvas espirales suaves. Un centro de mesa sofisticado para flores secas, pampas o elementos de decoración minimalista.',
+    colorsAvailable: ['Seda Dorado', 'Blanco Mármol', 'Negro Mate', 'Cobre'],
+    tags: ['Jarrón', 'Florero', 'Decoración', 'Hogar']
+  },
+  {
+    id: 'prod-hogar-036',
+    title: 'Jarrón Esfera SANDS',
+    subtitle: 'Florero esférico de textura estriada tipo dunas de arena',
+    category: 'hogar',
+    material: 'PLA Plus',
+    featured: false,
+    price: 11000,
+    priceDisplay: '$11.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US5c2815285897a9/design/4fe840b7d0a9c36a.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Florero con geometría de dunas de arena estriadas en cuerpo esférico. Aporta textura y estilo orgánico a estantes y mesas de centro.',
+    colorsAvailable: ['Arena Beige', 'Blanco Mate', 'Gris Terracota'],
+    tags: ['Jarrón', 'Florero', 'Esfera', 'Diseño']
+  },
+  {
+    id: 'prod-hogar-037',
+    title: 'Florero Nova Faceta',
+    subtitle: 'Jarrón geométrico de facetas facetadas y luz reflectante',
+    category: 'hogar',
+    material: 'PLA Plus',
+    featured: false,
+    price: 10000,
+    priceDisplay: '$10.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US7711055cad5a1e/design/de62378478bf0fff.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Florero de polígonos geométricos con caras biseladas que atrapan la luz en hermosos degradados. Elegante pieza de interiores.',
+    colorsAvailable: ['Blanco Satinado', 'Negro Azabache', 'Seda Plata'],
+    tags: ['Florero', 'Geométrico', 'Facetado', 'Decoración']
+  },
+  {
+    id: 'prod-hogar-038',
+    title: 'Toallero Moderno para Cocina y Baño',
+    subtitle: 'Barra soporte toallera de diseño minimalista contemporáneo',
+    category: 'hogar',
+    material: 'PETG',
+    featured: true,
+    price: 8500,
+    priceDisplay: '$8.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/USb89765243e8087/design/2025-11-30_f79d6b82f053.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Barra toallera elegante para instalar bajo mesada, puertas de alacena o pared de baño. Impreso en PETG lavable e inalterable.',
+    colorsAvailable: ['Negro Mate', 'Blanco', 'Gris'],
+    tags: ['Toallero', 'Cocina', 'Baño', 'PETG']
+  },
+  {
+    id: 'prod-util-032',
+    title: 'Soporte de Esponja Autodrenante de Fregadero',
+    subtitle: 'Organizador de cocina con canal de descarga de agua',
+    category: 'utilidades',
+    material: 'PETG',
+    featured: true,
+    price: 6500,
+    priceDisplay: '$6.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US4d69abb8c9877e/design/b51cf920647dac73.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Porta esponja con vertedero inclinado que drena automáticamente el agua residual directamente dentro de la bacha de cocina.',
+    colorsAvailable: ['Blanco', 'Gris Claro', 'Negro'],
+    tags: ['Esponja', 'Cocina', 'Autodrenante', 'PETG']
+  },
+  {
+    id: 'prod-util-033',
+    title: 'Dispensador de Vasos Minimalista Acanalado',
+    subtitle: 'Organizador vertical de vasos descartables o reutilizables',
+    category: 'utilidades',
+    material: 'PLA Plus',
+    featured: false,
+    price: 8000,
+    priceDisplay: '$8.000 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US3ae3b101eebaed/design/761902e2341f44e2.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Dispensador acanalado vertical para vasos de café, té o agua. Ideal para dispensers de oficina, comercios o quincho.',
+    colorsAvailable: ['Blanco', 'Negro', 'Beige'],
+    tags: ['Vasos', 'Dispensador', 'Oficina', 'Organizador']
+  },
+  {
+    id: 'prod-util-034',
+    title: 'Conservador Apilable Modular para Cocina',
+    subtitle: 'Contenedor ventilado para frutas, verduras o especias',
+    category: 'utilidades',
+    material: 'PETG',
+    featured: true,
+    price: 11500,
+    priceDisplay: '$11.500 ARS',
+    images: [
+      'https://makerworld.bblmw.com/makerworld/model/US62aa0b0d1ad9c9/design/2025-12-09_31b76a831dea88.png?x-oss-process=image/resize,w_1000/format,webp'
+    ],
+    description: 'Cajón apilable con rejillas de ventilación lateral. Ideal para guardar cebollas, papas, ajos o frutas manteniendo la circulación de aire.',
+    colorsAvailable: ['Translucido', 'Blanco', 'Verde Menta'],
+    tags: ['Cocina', 'Conservador', 'Modular', 'Apilable', 'PETG']
+  },
   // JUGUETES Y ARTICULADOS
   {
     id: 'prod-jug-001',
