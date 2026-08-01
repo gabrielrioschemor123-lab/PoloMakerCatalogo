@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'motion/react';
 import { Product } from '../types';
 import { 
   Bookmark, 
@@ -23,7 +24,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   onWhatsAppQuote,
 }) => {
   return (
-    <div className="group bg-white rounded-2xl border border-slate-200 hover:border-blue-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden relative">
+    <motion.div 
+      initial={{ opacity: 0, y: 16, scale: 0.97 }}
+      animate={{ opacity: 1, y: 0, scale: 1 }}
+      exit={{ opacity: 0, y: -10, scale: 0.97 }}
+      transition={{ duration: 0.35, ease: [0.25, 0.1, 0.25, 1] }}
+      layout
+      className="group bg-white rounded-2xl border border-slate-200 hover:border-blue-300 shadow-xs hover:shadow-md transition-all duration-300 flex flex-col overflow-hidden relative"
+    >
       
       {/* Featured Ribbon */}
       {product.featured && (
@@ -38,7 +46,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           e.stopPropagation();
           onToggleSave(product.id);
         }}
-        className={`absolute top-3 right-3 z-20 p-2 rounded-full backdrop-blur-md transition-colors ${
+        className={`absolute top-3 right-3 z-20 p-2 rounded-full backdrop-blur-md transition-colors cursor-pointer ${
           isSaved 
             ? 'bg-blue-600 text-white shadow-xs' 
             : 'bg-white/80 hover:bg-white text-slate-500 hover:text-blue-600'
@@ -129,7 +137,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
 
       </div>
 
-    </div>
+    </motion.div>
   );
 };
 

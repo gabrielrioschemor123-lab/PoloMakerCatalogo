@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Product, FilterState, CategoryType, MaterialType } from '../types';
 import { CATEGORIES } from '../data/products';
 import { ProductCard } from './ProductCard';
@@ -270,20 +271,25 @@ export const Catalog: React.FC<CatalogProps> = ({
             ) : null}
 
             {/* Standard Grid Layout (Always on desktop, and on mobile when Grid mode is selected or a specific filter is active) */}
-            <div className={`${
-              filterState.category === 'todos' && mobileViewMode === 'carousel' ? 'hidden md:grid' : 'grid'
-            } grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6`}>
-              {filteredProducts.map((product) => (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onSelectProduct={onSelectProduct}
-                  isSaved={savedIds.includes(product.id)}
-                  onToggleSave={onToggleSave}
-                  onWhatsAppQuote={onWhatsAppQuote}
-                />
-              ))}
-            </div>
+            <motion.div 
+              layout
+              className={`${
+                filterState.category === 'todos' && mobileViewMode === 'carousel' ? 'hidden md:grid' : 'grid'
+              } grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6`}
+            >
+              <AnimatePresence mode="popLayout">
+                {filteredProducts.map((product) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    onSelectProduct={onSelectProduct}
+                    isSaved={savedIds.includes(product.id)}
+                    onToggleSave={onToggleSave}
+                    onWhatsAppQuote={onWhatsAppQuote}
+                  />
+                ))}
+              </AnimatePresence>
+            </motion.div>
 
             {/* ¿NO ENCONTRASTE LO QUE BUSCABAS? SLEEK BOTTOM BANNER */}
             <div className="bg-slate-900 rounded-2xl p-5 sm:p-6 text-white border border-slate-800 shadow-lg relative overflow-hidden my-8">
